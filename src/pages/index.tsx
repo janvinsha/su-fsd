@@ -30,7 +30,7 @@ export default function Home() {
       <select
         name="lists"
         id="lists"
-        className="border p-2 rounded-lg"
+        className="border p-2 px-4 rounded-lg"
         onChange={selectOnChange}
       >
         <option value="createdAt">Sort by created at</option>

@@ -26,11 +26,11 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col gap-[3rem] md:gap-[5rem] items-center py-[5rem] w-full">
+    <div className="flex flex-col gap-[3rem] md:gap-[5rem] items-center py-[5rem] w-full bg-white text-black">
       <select
         name="lists"
         id="lists"
-        className="border p-2 px-4 rounded-lg"
+        className="border border-gray-200 p-2 px-4 rounded-lg bg-white text-black"
         onChange={selectOnChange}
       >
         <option value="createdAt">Sort by created at</option>
@@ -40,7 +40,7 @@ export default function Home() {
       <div className="grid grid-cols-2 gap-5 md:gap-[4rem] ">
         {csvList?.map((list, index) => (
           <div
-            className="container flex flex-col w-[10rem] border p-2 md:w-[15rem] rounded-lg"
+            className="container flex flex-col w-[10rem] border border-gray-200 p-2 md:w-[15rem] rounded-lg"
             key={list.id + index}
           >
             <p className="text-xs">{list.createdAt}</p>
